@@ -1,0 +1,10 @@
+name: actions-learning
+on: push
+jobs:
+  action-one:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Check out repo code
+        uses: actions/checkout@v3
+      - run: echo "$(cat hello_larry.txt)"
+        
